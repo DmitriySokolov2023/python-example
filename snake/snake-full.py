@@ -75,7 +75,8 @@ def game():
 
         # Рост змейки
         snake_body.insert(0, list(snake_pos))
-        if snake_pos == food_pos:
+        if snake_pos == [food_pos[1]+10, food_pos[0]+10]:
+            print(snake_pos)
             score += 1
             food_spawn = False
         else:
