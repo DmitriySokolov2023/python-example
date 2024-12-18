@@ -6,9 +6,15 @@ from random import randint
 WIDTH = 425
 HEIGHT = 600
 
+
 #Переменные цвета
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+LIGHT_GRAY = (224, 224, 224)
+
+# Размеры кнопок
+BUTTON_WIDTH, BUTTON_HEIGHT = 80, 60
+BUTTON_MARGIN = 10
 
 pygame.init()
 
@@ -17,7 +23,7 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Calculator")
 
 while True:
-	screen.fill(BLACK)
+	screen.fill(LIGHT_GRAY)
 	
 	rect1 = pygame.draw.rect(screen, WHITE, (WIDTH - 105, HEIGHT - 105, 100, 100))
 	rect2 = pygame.draw.rect(screen, WHITE, (WIDTH - 105*2, HEIGHT - 105, 100, 100))
